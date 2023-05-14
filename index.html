@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./src/images/favicon-32x32.png"
-    />
     <link rel="stylesheet" href="./src/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,29 +30,33 @@
     <div class="container">
       <card class="user-info">
         <div class="user-data">
-          <img
-            src="./src/images/image-jeremy.png"
-            alt="user-picture"
-            class="picture-user"
-          />
-          Report for Jeremy Robson
+          <span
+            ><img
+              src="./src/images/image-jeremy.png"
+              alt="user-picture"
+              class="picture-user"
+          /></span>
+          <span class="report"> Report for </span>
+          <br />
+          <div class="name">Jeremy Robson</div>
         </div>
         <div class="card-footer">
-          <span>Daily </span><span>Weekly</span><span>Monthly </span>
+          <span><button class="daily" id="daily">Daily</button></span
+          ><span><button class="weekly" id="weekly">Weekly</button></span
+          ><span><button class="monthly" id="monthly">Monthly</button> </span>
         </div>
       </card>
 
       <!--work-->
       <card class="work">
         <div class="work-header">
-          <img src="./src/images/icon-work.svg" alt="icon-work" />
+          <img src="./src/images/icon-work.svg" class="icon" alt="icon-work" />
         </div>
         <div class="data">
-          <div class="card-title">Work</div>
-          <div class="current">5hrs</div>
+          <div class="card-title" id="title-work">Work</div>
 
           <!-- daily -->
-          <div class="previous">
+          <div class="previous" id="previous-work">
             Previous - 7hrs
             <!-- daily -->
             32hrs
@@ -70,18 +68,19 @@
             Previous - 128hrs
             <!-- monthly -->
           </div>
+          <div class="current" id="current-work"></div>
         </div>
       </card>
       <!--play-->
       <card class="play">
         <div class="play-header">
-          <img src="./src/images/icon-play.svg" alt="icon-play" />
+          <img src="./src/images/icon-play.svg" class="icon" alt="icon-play" />
         </div>
         <div class="data">
-          <div class="card-title">Play</div>
-          <div class="current">1hr</div>
+          <div class="card-title" id="title-play">Play</div>
+          <div class="current" id="current-play"></div>
 
-          <div class="previous">
+          <div class="previous" id="previous-play">
             <!-- daily -->
             Previous - 2hrs
             <!-- daily -->
@@ -99,13 +98,17 @@
       <!--study-->
       <card class="study">
         <div class="header">
-          <img src="./src/images/icon-study.svg" alt="icon-study" />
+          <img
+            src="./src/images/icon-study.svg"
+            class="icon"
+            alt="icon-study"
+          />
         </div>
         <div class="data">
-          <div class="card-title">Study</div>
-          <div class="current">0hrs</div>
+          <div class="card-title" id="title-study">Study</div>
+          <div class="current" id="current-study"></div>
 
-          <div class="previous">
+          <div class="previous" id="previous-study">
             <!-- daily -->
             Previous - 1hr
             <!-- daily -->
@@ -123,13 +126,17 @@
       <!--exercice-->
       <card class="exercise">
         <div class="exercice-header">
-          <img src="./src/images/icon-exercise.svg" alt="icon-exercice" />
+          <img
+            src="./src/images/icon-exercise.svg"
+            class="icon"
+            alt="icon-exercice"
+          />
         </div>
         <div class="data">
-          <div class="card-title">Exercise</div>
-          <div class="current">1hr</div>
+          <div class="card-title" id="title-exercise">Exercise</div>
+          <div class="current" id="current-exercise"></div>
 
-          <div class="previous">
+          <div class="previous" id="previous-exercise">
             <!-- daily -->
             Previous - 1hr
             <!-- daily -->
@@ -147,13 +154,17 @@
       <!--social-->
       <card class="social">
         <div class="social-header">
-          <img src="./src/images/icon-social.svg" alt="icon-social" />
+          <img
+            src="./src/images/icon-social.svg"
+            class="icon"
+            alt="icon-social"
+          />
         </div>
         <div class="data">
-          <div class="card-title">Social</div>
-          <div class="current">1hr</div>
+          <div class="card-title" id="title-social">Social</div>
+          <div class="current" id="current-social"></div>
 
-          <div class="previous">
+          <div class="previous" id="previous-social">
             <!-- daily -->
             Previous - 3hrs
             <!-- daily -->
@@ -171,14 +182,18 @@
       <!--self care-->
       <card class="self-care">
         <div class="self-care-header">
-          <img src="./src/images/icon-self-care.svg" alt="icon-self-care" />
+          <img
+            src="./src/images/icon-self-care.svg"
+            class="icon"
+            alt="icon-self-care"
+          />
         </div>
         <div class="data">
-          <div class="card-title">Self Care</div>
-          <div class="current">1hr</div>
-          0hrs
+          <div class="card-title" id="title-self-care">Self Care</div>
+          <div class="current" id="current-self-care">h</div>
+
           <!-- daily -->
-          <div class="previous">
+          <div class="previous" id="previous-self-care">
             Previous - 1hr
             <!-- daily -->
             2hrs

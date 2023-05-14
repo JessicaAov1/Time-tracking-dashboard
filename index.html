@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <card class="user-info">
+        <div class="user-data">
+          <img
+            src="./src/images/image-jeremy.png"
+            alt="user-picture"
+            class="picture-user"
+          />
+          Report for Jeremy Robson
+        </div>
+        <div class="card-footer">
+          <span>Daily </span><span>Weekly</span><span>Monthly </span>
+        </div>
+      </card>
+
+      <!--work-->
+      <card class="work">
+        <div class="work-header">
+          <img src="./src/images/icon-work.svg" alt="icon-work" />
+        </div>
+        <div class="data">
+          <div class="card-title">Work</div>
+          <div class="current">5hrs</div>
+
+          <!-- daily -->
+          <div class="previous">
+            Previous - 7hrs
+            <!-- daily -->
+            32hrs
+            <!-- weekly -->
+            Previous - 36hrs
+            <!-- weekly -->
+            103hrs
+            <!-- monthly -->
+            Previous - 128hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </card>
+      <!--play-->
+      <card class="play">
+        <div class="play-header">
+          <img src="./src/images/icon-play.svg" alt="icon-play" />
+        </div>
+        <div class="data">
+          <div class="card-title">Play</div>
+          <div class="current">1hr</div>
+
+          <div class="previous">
+            <!-- daily -->
+            Previous - 2hrs
+            <!-- daily -->
+            10hrs
+            <!-- weekly -->
+            Previous - 8hrs
+            <!-- weekly -->
+            23hrs
+            <!-- monthly -->
+            Previous - 29hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </card>
+      <!--study-->
+      <card class="study">
+        <div class="header">
+          <img src="./src/images/icon-study.svg" alt="icon-study" />
+        </div>
+        <div class="data">
+          <div class="card-title">Study</div>
+          <div class="current">0hrs</div>
+
+          <div class="previous">
+            <!-- daily -->
+            Previous - 1hr
+            <!-- daily -->
+            4hrs
+            <!-- weekly -->
+            Previous - 7hrs
+            <!-- weekly -->
+            13hrs
+            <!-- monthly -->
+            Previous - 19hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </card>
+      <!--exercice-->
+      <card class="exercise">
+        <div class="exercice-header">
+          <img src="./src/images/icon-exercise.svg" alt="icon-exercice" />
+        </div>
+        <div class="data">
+          <div class="card-title">Exercise</div>
+          <div class="current">1hr</div>
+
+          <div class="previous">
+            <!-- daily -->
+            Previous - 1hr
+            <!-- daily -->
+            4hrs
+            <!-- weekly -->
+            Previous - 5hrs
+            <!-- weekly -->
+            11hrs
+            <!-- monthly -->
+            Previous - 18hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </card>
+      <!--social-->
+      <card class="social">
+        <div class="social-header">
+          <img src="./src/images/icon-social.svg" alt="icon-social" />
+        </div>
+        <div class="data">
+          <div class="card-title">Social</div>
+          <div class="current">1hr</div>
+
+          <div class="previous">
+            <!-- daily -->
+            Previous - 3hrs
+            <!-- daily -->
+            5hrs
+            <!-- weekly -->
+            Previous - 10hrs
+            <!-- weekly -->
+            21hrs
+            <!-- monthly -->
+            Previous - 23hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </card>
+      <!--self care-->
+      <card class="self-care">
+        <div class="self-care-header">
+          <img src="./src/images/icon-self-care.svg" alt="icon-self-care" />
+        </div>
+        <div class="data">
+          <div class="card-title">Self Care</div>
+          <div class="current">1hr</div>
+          0hrs
+          <!-- daily -->
+          <div class="previous">
+            Previous - 1hr
+            <!-- daily -->
+            2hrs
+            <!-- weekly -->
+            Previous - 2hrs
+            <!-- weekly -->
+            7hrs
+            <!-- monthly -->
+            Previous - 11hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </card>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jessica</a>.
+    </div>
+  </body>
+  <script src="./src/index.js"></script>
+</html>

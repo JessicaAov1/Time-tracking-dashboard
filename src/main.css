@@ -1,0 +1,137 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-pimary-Blue: hsl(246, 80%, 60%);
+  --clr-pimary-Light-red-work: hsl(15, 100%, 70%);
+  --clr-pimary-Soft-blue-play: hsl(195, 74%, 62%);
+  --clr-pimary-Light-red-study: hsl(348, 100%, 68%);
+  --clr-pimary-Lime-green-exercise: hsl(145, 58%, 55%);
+  --clr-pimary-Violet-social: hsl(264, 64%, 52%);
+  --clr-pimary-Soft-orange-self-care: hsl(43, 84%, 65%);
+  --clr-neutral-Very-dark-blue: hsl(226, 43%, 10%);
+  --clr-neutral-Dark-blue: hsl(235, 46%, 20%);
+  --clr-neutral-Desaturated-blue: hsl(235, 45%, 61%);
+  --clr-neutral-Pale-Blue: hsl(236, 100%, 87%);
+  --border-radius: 7%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/*
+=============== 
+Cards
+===============
+*/
+
+.container {
+  background: var(--clr-neutral-Very-dark-blue);
+  width: 100vw;
+  color: whitesmoke;
+  border: 1px solid var(--clr-pimary-Light-red-work);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 10rem;
+  margin: 0 auto;
+}
+card {
+  width: 45vw;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  card {
+    width: 70%;
+  }
+  .user-info {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row-gap: 2rem;
+  }
+}
+/*
+=============== 
+User info
+===============
+*/
+.user-info {
+  margin-top: 1rem;
+  background: var(--clr-pimary-Blue);
+}
+
+.picture-user {
+  margin: 0.5rem auto;
+  width: 15vh;
+}
+.card-footer {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0.5rem;
+  background: var(--clr-neutral-Dark-blue);
+  color: var(--clr-neutral-Desaturated-blue);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+@media screen and (min-width: 768px) {
+  .card-footer {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5rem;
+  }
+}
+/*
+=============== 
+Cards data
+===============
+*/
+
+.data {
+  background: var(--clr-neutral-Dark-blue);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 300;
+  display: grid;
+}
+
+img {
+  width: 20%;
+}
+.card-title {
+  font-weight: 400;
+}
+.work {
+  background: var(--clr-pimary-Light-red-work);
+}
+.play {
+  background: var(--clr-pimary-Soft-blue-play);
+}
+.exercise {
+  background: var(--clr-pimary-Lime-green-exercise);
+}
+.study {
+  background: var(--clr-pimary-Light-red-study);
+}
+.exercise {
+  background: var(--clr-pimary-Lime-green-exercise);
+}
+.social {
+  background: var(--clr-pimary-Violet-social);
+}
+.self-care {
+  background: var(--clr-pimary-Soft-orange-self-care);
+}

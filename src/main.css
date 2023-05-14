@@ -41,22 +41,39 @@ Cards
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  padding: 10rem;
+  padding: 2rem;
   margin: 0 auto;
 }
 card {
-  width: 45vw;
+  width: 70vw;
   justify-content: center;
-  margin-bottom: 1rem;
+  justify-content: space-around;
+  margin: 0.5rem auto;
   border-radius: var(--border-radius);
 }
+.data {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.current {
+  font-size: 3rem;
+}
 
+/*
+=============== 
+User info
+===============
+*/
+.user-info {
+  background: var(--clr-pimary-Blue);
+  height: 34vh;
+}
 @media screen and (min-width: 768px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
   }
   card {
-    width: 70%;
+    width: 15vw;
   }
   .user-info {
     grid-row-start: 1;
@@ -64,22 +81,25 @@ card {
     grid-row-gap: 2rem;
   }
 }
-/*
-=============== 
-User info
-===============
-*/
-.user-info {
-  margin-top: 1rem;
-  background: var(--clr-pimary-Blue);
+.user-data {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
-
 .picture-user {
-  margin: 0.5rem auto;
-  width: 15vh;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+  width: 12vh;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.report {
+  padding: 1rem;
+}
+.name {
+  padding: 0;
+  margin: 0 0 0.5rem 1rem;
 }
 .card-footer {
-  padding: 0.5rem;
+  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 0.5rem;
@@ -88,6 +108,17 @@ User info
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
+button {
+  cursor: pointer;
+  background: var(--clr-neutral-Dark-blue);
+  border: none;
+  color: var(--clr-neutral-Desaturated-blue);
+  font-family: "Rubik", sans-serif;
+}
+button:hover {
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .card-footer {
     grid-template-columns: 1fr;
@@ -108,7 +139,7 @@ Cards data
   display: grid;
 }
 
-img {
+.icon {
   width: 20%;
 }
 .card-title {
